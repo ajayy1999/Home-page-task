@@ -1,0 +1,93 @@
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .button:not([class*="button-"]) {
+    background-color: #ff6a00;
+    color: white;
+  }
+
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .button:active {
+    transform: translateY(0);
+  }
+
+  .button-secondary {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+
+  .button-secondary:hover {
+    background-color: #f8f8f8;
+    border-color: #ccc;
+  }
+
+  .button-outlined {
+    background-color: transparent;
+    color: #ff6a00;
+    border: 2px solid #ff6a00;
+  }
+
+  .button-outlined:hover {
+    background-color: rgba(255, 106, 0, 0.05);
+  }
+
+  .button-sm {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .button-lg {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+  }
+
+  .button-block {
+    display: block;
+    width: 100%;
+  }
+
+  .active {
+    background-color: #ff6a00;
+    color: white;
+    border-color: #ff6a00;
+  }
+
+  .button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+
+    .button-sm {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+
+    .button-lg {
+      padding: 12px 24px;
+      font-size: 1rem;
+    }
+  }

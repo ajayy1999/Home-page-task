@@ -1,0 +1,84 @@
+.success-message {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .contact-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .form-group div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+  }
+
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .submit-button:hover {
+    background: darkorange;
+  }
+
+  @media (min-width: 600px) {
+    .form-group div {
+      width: 48%;
+    }
+    .submit-button {
+      width: 50%;
+    }
+  }

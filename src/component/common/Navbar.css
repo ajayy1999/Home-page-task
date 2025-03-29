@@ -1,0 +1,153 @@
+  .navbar {
+    background: #E7F1F2;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .navbar-logo img {
+    height: 50px;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  .nav-item {
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links {
+    color: #333;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+    font-weight: 500;
+    padding: 0 5px;
+    position: relative;
+  }
+
+.nav-links:hover {
+    color: #ff6a00;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav-links:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ff6a00;
+    bottom: 25px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+
+  .nav-links:hover:after {
+    width: 100%;
+  }
+
+  .contact-btn {
+    background-color: #ff6a00;
+    color: white !important;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .contact-btn:hover {
+    background-color: #e65c00;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 960px) {
+    .navbar-container {
+      padding: 0 30px;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-menu.active {
+      background: #fff;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+      padding-top: 30px;
+    }
+
+    .nav-item {
+      height: 60px;
+    }
+
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 90px;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  }
