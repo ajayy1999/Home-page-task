@@ -6,6 +6,7 @@ import ServiceSection from './component/home/ServiceSection'
 import Blog from './pages/Blog'
 import AboutSection from './component/about/AboutSection'
 import Contact from './pages/Contact'
+// import CaseStudies from './pages/CaseStudies'
 
 const App = () => {
   return (

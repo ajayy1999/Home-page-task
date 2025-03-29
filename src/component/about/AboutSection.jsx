@@ -1,6 +1,7 @@
 import Button from '../common/Button';
 import './AboutSection.css';
-import About from '../../../public/images/about.png'
+import About from '../../../public/images/about.png';
+
 const AboutSection = () => {
   return (
     <section className="about-section">
